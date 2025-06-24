@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coriander Masala - Omix Masalas</title>
+  <link rel="stylesheet" href="chilli.css">
+</head>
+<body>
+  <header>
+    <div class="top-bar">Now shipping across India! | Free Delivery on orders above ₹750</div>
+    <nav>
+      <div class="logo">
+        <img src="images/omixmasala.png">
+        <span>Omix Masalas</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Masalas</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="product-table">
+    <table>
+      <tr>
+        <td class="product-image-cell">
+          <img src="images/malli.png">
+        </td>
+        <td class="product-info-cell">
+          <h1>Coriander Masala Powder - 100g</h1>
+          <p class="price">Rs. 95.00</p>
+          <p class="description">
+            Chicken Masala is a signature blend from Omix that transforms your chicken dishes with rich, aromatic spices. Perfect with rice or chapati!
+          </p>
+
+          <div class="product-actions">
+ 
+          <div class="quantity-center">
+            <button onclick="decreaseQty()">−</button>
+            <input type="number" id="qty" value="1" min="1">
+            <button onclick="increaseQty()">+</button>
+          </div>
+
+          <div class="add-button-center">
+            <div class="button-row">
+              <button class="add-to-cart">Add to Cart</button>
+              <button class="wishlist-button" title="Add to Wishlist">💖</button>
+            </div>
+          </div>
+
+          <p class="vendor">Brand: <strong>Omix Masalas</strong></p>
+          <p class="stock">Availability: <span>In Stock</span></p>
+        </div>
+
+        </td>
+      </tr>
+    </table>
+  </main>
+
+  <a href="https://wa.me/918925731160" class="whatsapp-button" target="_blank">Message Us</a>
+
+  <script>
+    function increaseQty() {
+      document.getElementById('qty').stepUp();
+    }
+    function decreaseQty() {
+      document.getElementById('qty').stepDown();
+    }
+  </script>
+</body>
+</html>
