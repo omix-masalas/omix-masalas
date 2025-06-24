@@ -1,0 +1,155 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Top red bar */
+.top-bar {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 30px;
+}
+
+/* Header background */
+.main-header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('images/pexels.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: white;
+}
+
+/* Logo and brand name */
+.logo-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-brand img {
+  height: 70px;
+}
+
+.brand-name {
+  font-family: 'Lobster', cursive;
+  font-size: 1.8rem;
+  color: #d91e63;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  letter-spacing: 2px;
+}
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #d91e63;
+}
+
+/* Header content */
+.header-content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.header-content h2 {
+  font-size: 3rem;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: red;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  margin: 20px 0;
+}
+
+.home {
+  padding: 10px 20px;
+  background: #ff6f00;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .brand-name {
+    font-size: 1.5rem;
+  }
+
+  .header-content {
+    top: 50%;
+    padding: 0 20px;
+  }
+
+  .header-content h2 {
+    font-size: 2rem;
+  }
+
+  .header-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .logo-brand img {
+    height: 60px;
+  }
+
+  .main-header {
+    background-attachment: scroll;
+  }
+}

@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdfcfa;
+}
+
+.top-bar {
+  background: #c0392b;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #c0392b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 90px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Table layout */
+.product-table {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-image-cell {
+  width: 40%;
+  padding: 20px;
+}
+
+.product-image-cell img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.product-info-cell {
+  padding: 20px;
+  vertical-align: top;
+}
+
+.product-info-cell h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  color: #c0392b;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-bottom: 20px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.product-actions {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.quantity-center,
+.add-button-center {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.quantity-center {
+  display: inline-flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.quantity-center button {
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  background: #eee;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.quantity-center input {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.add-to-cart {
+  background: #c0392b;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.add-to-cart:hover {
+  background: #a93226;
+}
+
+.wishlist-button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.wishlist-button:hover {
+  transform: scale(1.2);
+}
+
+.vendor,
+.stock {
+  font-size: 14px;
+  color: #555;
+  margin: 6px 0;
+}
+
+.stock span {
+  color: green;
+  font-weight: bold;
+}
+
+.whatsapp-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
